@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Your Makeup Cart</h1>
+            <div id="cartItems" class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+            </div>
+            <!-- Insert the div element for displaying file content -->
+            <div id="fileContent"></div>
+            <div class="form-group">
+                <label>File Name:</label>
+                <input id="fileName" type="text" class="form-control">
+            </div>
+            <br>
+            <button id="btnCreate" class="btn btn-default">Create</button>
+            <button id="btnRead" class="btn btn-default">Read</button>
+            <br>
+            <br>
+            <a href="index.html" class="go-back-button">Go Back to Shopping</a>
+        </div>
+    </main>
+    <script src="cart.js"></script>
+</body>
+</html>

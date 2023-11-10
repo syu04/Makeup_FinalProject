@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Makeup Search</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>💄 Beauty Fusion 💋</h1>
+            <p>Welcome to the world where creativity blossoms</p>
+            <form id="searchForm">
+                <div id="messageBox" class="message-box"></div>
+                <select id="makeup-brand-dropdown">
+                    <option value="" selected disabled hidden>Select Brand</option>
+                    <option value="maybelline">Maybelline</option>
+                    <option value="l'oreal">L'Oréal</option>
+                    <option value="milani">Milani</option>
+                    <option value="alva">Alva</option>
+                    <option value="colourpop">ColourPop</option>
+                    <option value="covergirl">CoverGirl</option>
+                    <option value="dior">Dior</option>
+                </select>
+                <fieldset class="categorybox">
+                    <legend>Product Category:</legend>
+                    <input type="radio" id="blush" name="category" value="Blush">
+                    <label for="blush">Blush</label>
+                
+                    <input type="radio" id="bronzer" name="category" value="Bronzer">
+                    <label for="bronzer">Bronzer</label>
+                
+                    <input type="radio" id="eyebrow" name="category" value="Eyebrow">
+                    <label for="eyebrow">Eyebrow</label>
+                
+                    <input type="radio" id="eyeliner" name="category" value="Eyeliner">
+                    <label for="eyeliner">Eyeliner</label>
+                
+                    <input type="radio" id="eyeshadow" name="category" value="Eyeshadow">
+                    <label for="eyeshadow">Eyeshadow</label>
+                
+                    <input type="radio" id="foundation" name="category" value="Foundation">
+                    <label for="foundation">Foundation</label>
+                
+                    <input type="radio" id="lip-liner" name="category" value="Lip liner">
+                    <label for="lip-liner">Lip liner</label>
+                
+                    <input type="radio" id="lipstick" name="category" value="Lipstick">
+                    <label for="lipstick">Lipstick</label>
+                
+                    <input type="radio" id="mascara" name="category" value="Mascara">
+                    <label for="mascara">Mascara</label>
+                
+                    <input type="radio" id="nail-polish" name="category" value="Nail polish">
+                    <label for="nail-polish">Nail polish</label>
+                
+                    <input type="radio" id="all" name="category" value="All">
+                    <label for="all">All</label>
+                </fieldset>
+                <button type="submit">Search</button>
+                <button onclick="goToCart()">Go to Cart</button>
+            </form>
+            <br>
+            <div id="makeupDetailsContainer" class="makeup-details-container hidden">
+                <!-- Product details will be added here dynamically -->
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+    <script>
+        function goToCart() {
+            window.location.href = "cart.html";
+        }
+    </script>
+</body>
+</html>

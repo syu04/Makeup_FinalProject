@@ -1,0 +1,95 @@
+/* Style for the container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: papayawhip;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style for the shopping cart title */
+h1 {
+    font-size: 24px;
+    color: purple;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Style for the cart items */
+.cart-items {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style for individual cart items */
+.cart-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:khaki;
+}
+/* Style for the product name in a cart item */
+.cart-item h2 {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+/* Style for the price in a cart item */
+.cart-item p {
+    font-size: 16px;
+    color: green;
+    margin: 0;
+    font-weight: bolder;
+}
+
+/* Style for the quantity in a cart item */
+.cart-item .quantity {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 5px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+}
+
+/* Style for the container that holds buttons in a cart item */
+.cart-item .button-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the "update" and "delete" buttons in a cart item */
+.cart-item .button-container button {
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Style for the "delete" button */
+.cart-item .button-container .delete-button {
+    background-color: #ff5555;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+}
+/* Style for the "update" button */
+.cart-item .button-container .update-button {
+    background-color: #ff5555;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+}
+.file-content {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f7f7f7;
+}
+    /* Add more styles as needed */
